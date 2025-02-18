@@ -14,7 +14,6 @@ stages:
     - task: TerraformInstaller@0
       inputs:
         terraformVersion: 'latest'
-
     - script: |
         terraform --version
         terraform init -upgrade"
@@ -30,7 +29,6 @@ stages:
     - task: TerraformInstaller@0
       inputs:
         terraformVersion: 'latest'
-
     - script: |
         terraform --version
         terraform init -upgrade"

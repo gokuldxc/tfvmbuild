@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'ubuntu'
+  name: Ubuntu
 
 stages:
 - stage: Plan

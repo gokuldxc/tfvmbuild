@@ -16,7 +16,7 @@ stages:
         terraformVersion: 'latest'
     - script: |
         terraform --version
-        terraform init -upgrade"
+        terraform init -upgrade
         terraform plan -out=tfplan
       displayName: 'Terraform Init and Plan'
 
@@ -32,6 +32,6 @@ stages:
 
     - script: |
         terraform --version
-        terraform init -upgrade"
+        terraform init -upgrade
         terraform apply -auto-approve tfplan
       displayName: 'Terraform Init and Apply'

@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  name: Ubuntu
+  vmImage: 'ubuntu-latest'
 
 stages:
 - stage: Plan
@@ -29,6 +29,7 @@ stages:
     - task: TerraformInstaller@0
       inputs:
         terraformVersion: 'latest'
+
     - script: |
         terraform --version
         terraform init -upgrade"
